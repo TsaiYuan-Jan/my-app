@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MyRGBPanel from "./components/rgb-panel/MyRGBPanel"
+import MySlider from "./components/rgb-panel/MySlider";
+import MyCalculator from "./components/calculator/MyCalculator";
+import TicTacToe from "./components/tic-tac-toe/TicTacToe";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>MySlider</h1>
+      <MySlider />
+      <h1>MyRGBPanel</h1>
+      <MyRGBPanel />
+      <h1>MyCalculator</h1>
+      <MyCalculator />
+      <h1>Tic-Tac-Toe Game</h1>
+      <TicTacToe />
     </div>
   );
 }
